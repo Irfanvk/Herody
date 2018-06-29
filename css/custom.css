@@ -6,6 +6,9 @@
         margin-top: 30px;
         font-size: 3rem ;
     }
+    #headid{
+        display: none;
+    }
 }
 #head1{
     background: url("../images/img2.jpeg") no-repeat fixed bottom;

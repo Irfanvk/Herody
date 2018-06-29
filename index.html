@@ -13,6 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/lists.css" rel="stylesheet">
@@ -48,7 +50,7 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron" id="head1" >
         <div class="container">
-          <h1 class="display-1 shadow-lg p-3 mb-2 bg-white rounded" style="padding-top: 30px; color:orangered;" id="head">H E R O D Y <img src="images/logo.png" width="50px;"/><span><h3 style="color: black">Delivering Excellence</h3></span></h1>
+          <h1 class="display-1 shadow-lg p-3 mb-2 bg-white rounded" style="padding-top: 30px; color:orangered;text-shadow: 2px 2px 15px;border: 1px solid red" id="head">H E R O D Y <img src="images/logo.png" width="50px" style="border: 0.9px solid black; box-shadow: 2px 2px 10px black"/><span><h3 style="color: black">Delivering Excellence</h3></span></h1>
           <!-- <h3 style="color: cyan">Delivering Excellence</h3> -->
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
         </div>
@@ -117,7 +119,35 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-            <p>This is a large modal.</p>
+              <form class="was-validated">
+                  
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                    <span class="invalid-feedback">Upload your Document</span>
+                    <span class="valid-feedback">Selected the Document</span>
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                    <div class="invalid-feedback">Upload Image</div>
+                    <div class="valid-feedback">Selected the Image</div>
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                    <div class="invalid-feedback">Upload the Video</div>
+                    <div class="valid-feedback">Selected the Video</div>
+                  </div>
+
+                  <div class="custom-control custom-checkbox mb-3">
+                      <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                      <label class="custom-control-label" for="customControlValidation1">Agree to the Terms and Conditions</label>
+                      <div class="invalid-feedback">Click to agree</div>
+                    </div>
+                  <input type="submit" class="btn btn-info" value="Submit & Pay">
+                  
+                </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
