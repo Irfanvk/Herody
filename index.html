@@ -48,8 +48,8 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron" id="head1" >
         <div class="container">
-          <h1 class="display-1" style="padding-top: 30px; color:orangered" id="head">H E R O D Y</h1>
-          <h3 style="color: cyan">Delivering Excellence</h3>
+          <h1 class="display-1 shadow-lg p-3 mb-2 bg-white rounded" style="padding-top: 30px; color:orangered;" id="head">H E R O D Y <img src="images/logo.png" width="50px;"/><span><h3 style="color: black">Delivering Excellence</h3></span></h1>
+          <!-- <h3 style="color: cyan">Delivering Excellence</h3> -->
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
         </div>
       </div>
@@ -94,7 +94,7 @@
         <hr>
         <div class="row">
             <div class="col-lg-6 col-sm-12 col-md-6 d-flex d-flex justify-content-end d-flex align-items-center" >
-                <button type="button" class="btn btn-outline-primary">Pay & Upload</button>
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">Pay & Upload</button>
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6">
                     <ul class="list-group">
@@ -108,15 +108,29 @@
         <hr>
     </section>
 
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Please Fill and Submit before you pay</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>This is a large modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="container">
             <div class="row">
                 <div class="col-lg-12 col-sm-12 col-md-12 d-flex align-items-center flex-column">
                     <h2>Testimonials</h2>
-                    <ol>
-                        <li>Are you good at some skill?</li>
-                        <li>Upload your work, Get assessed by our panel</li>
-                        <li>Get your certificate to your doorstep</li>
-                    </ol>  
+                     
                 </div>
             </div>
             <hr>
