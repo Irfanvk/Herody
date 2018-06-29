@@ -1,0 +1,22 @@
+#jumb1 p+p{
+ background-color: blueviolet;
+}
+@media only screen and (max-width: 500px) {
+    .display-1{
+        margin-top: 30px;
+        font-size: 3rem ;
+    }
+}
+#head1{
+    background: url("../images/img2.jpeg") no-repeat fixed bottom;
+    background-position: center;
+    background-origin: padding-box;
+    background-size: cover;
+}
+#head1 > .container{
+    height: 350px;
+}
+
+.navbar{
+    background-color: blueviolet !important;
+}
